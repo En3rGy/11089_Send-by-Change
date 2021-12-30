@@ -2,14 +2,15 @@
 
 ## Description 
 
-Filter logic module for Gira Homeserver forward values dependinng on the %-change of the value.
+Filter logic module for Gira Homeserver. Forwards values dependinng on the %-change of the value.
+y = x if 
 
 ## Inputs
 
 | No. | Name | Initialisation | Description |
 | --- | --- | --- | --- |
 | 1 | Wert | 0 | Value to be processed |
-| 2 | Mind. %-Änderung | 10 | Min. change of last value passed throug the filter |
+| 2 | Mind. %-Änderung | 10 | Min. change of last value passed throug the filter; 0% results in std. sbc behaviour |
 
 ## Outputs
 
@@ -26,7 +27,14 @@ Filter logic module for Gira Homeserver forward values dependinng on the %-chang
 
 ### Change Log
 
-- v00.04	Initial
+- v00.04
+    - ?
+- v00.03
+    - check for "no change"
+- v00.02
+    - fixed bug for neg. deviation
+- v00.01
+    - Initial
 
 ### Open Issues / Know Bugs
 
@@ -37,12 +45,10 @@ Filter logic module for Gira Homeserver forward values dependinng on the %-chang
 Please use [github issue feature](https://github.com/En3rGy/14108_tibber/issues) to report bugs or rise feature requests.
 Questions can be addressed as new threads at the [knx-user-forum.de](https://knx-user-forum.de) also. There might be discussions and solutions already.
 
-
 ### Code
 
 Code and releases are availabe via [github](https://github.com/En3rGy/11089_Send-by-Change). Stable releases will be availabe at the [knx-user-forum.de download section](https://service.knx-user-forum.de/?comm=download) also.
 
-### Devleopment Environment
 
 ### Devleopment Environment
 
